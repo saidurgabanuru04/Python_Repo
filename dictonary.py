@@ -20,3 +20,27 @@ print(dictionary_01)
 chocolates = [["Cadbury","Dairy Milk"], ["Nestle","Kit-Kat"], ["Amul","Dark Chocolate"], ["Hersheys","Kisses"]]
 chocolates_dict = dict(chocolates)
 print(chocolates_dict)
+#converting tuples into dictionary
+cars = [("Audi","Quattro"),("BMW","M5"),("Ferrari","F40"),("Rolls Royce","Cullinan")]
+cars_dict = dict(cars)
+print(cars_dict)
+
+keys = ['name', 'age', 'city']
+values = ['Alice', 30, 'New York']
+
+my_dict = dict(zip(keys, values))
+print(my_dict)
+if "city" in my_dict :
+    del my_dict["city"]
+print(my_dict)
+
+print(f"Length = {len(my_dict)}")
+print(f"Length = {len(cars)}") 
+
+new = cars_dict.get("Ferrari")
+print(new)
+
+#iterating over a for loop
+d = {'Red': 1, 'Green': 2, 'Blue': 3} 
+for color_key, value in d.items():
+     print(color_key, 'corresponds to ', d[color_key])
